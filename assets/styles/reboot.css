@@ -1,0 +1,75 @@
+/**
+ * 更改盒模型为 border-box。
+ */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * 重置内边距及外边距
+ */
+
+article,
+aside,
+button,
+dd,
+details,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Microsoft YaHei", STHeiti, Helvetica, Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+ * 去除列表样式
+ */
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
