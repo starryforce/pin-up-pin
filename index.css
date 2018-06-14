@@ -217,7 +217,7 @@ section {
 
 .m-willing {
     padding: 0 0.4533rem 0.412rem;
-    margin-bottom:0.3627rem;
+    margin-bottom: 0.3627rem;
     text-align: center;
 }
 
@@ -339,26 +339,66 @@ section {
     display: flex;
     height: 1.5307rem;
     width: 100%;
-    background-color:#fff;
+    background-color: #fff;
+    border-top: solid #D0D0D0 0.016rem;
 }
 
 .m-nav .navbar_item {
-    flex-grow:1;
-    text-align:center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .m-nav .navbar_icon {
-    display:inline-block;
+    display: inline-block;
     width: 0.68rem;
     height: 0.68rem;
 }
 
 .m-nav .navbar_label {
-    margin-top:.12rem;
+    margin-top: .12rem;
     font-size: 0.3124rem;
     color: #999;
 }
 
-.m-nav .cart {
+.m-nav .cart .navbar_label {
+    color: #FFF;
+}
+
+.m-nav .circle {
+    position: relative;
+    left: 50%;
+    bottom: .2rem;
+    transform: translate(-50%);
     background-color: #BE201F;
+    border-radius: 50%;
+    width: 1.5067rem;
+    height: 1.5067rem;
+    z-index: 3;
+}
+
+.m-nav .cart::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -0.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid .016rem #D0D0D0;
+    width: 1.9067rem;
+    height: 1.9067rem;
+    z-index: 1;
+}
+
+.m-nav .cart::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: #fff;
+    width: 1.9307rem;
+    height: 1.5307rem;
+    z-index: 1;
 }
