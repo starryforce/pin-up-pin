@@ -1,7 +1,7 @@
 body {
     background: #F2F2F2;
     line-height: 1;
-    margin-bottom: 1.4rem !important;
+    padding-bottom: 1.5307rem !important;
 }
 
 section {
@@ -13,6 +13,7 @@ section {
 }
 
 .m-search_bar {
+    position: relative;
     display: flex;
     margin-bottom: .2rem;
     padding: 0.33rem .44rem;
@@ -48,6 +49,18 @@ section {
     color: #A5A4A4;
 }
 
+.m-search_bar .search_icon {
+    position: absolute;
+    top: 0.5467rem;
+    left: 2.5067rem;
+    width: .3333rem;
+    height: .3333rem;
+    display: inline-block;
+    background-image: url(assets/images/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .m-search_bar input[type=search] {
     flex-grow: 1;
     padding: .23rem 1.1rem;
@@ -65,6 +78,20 @@ section {
     padding: .28rem .44rem;
 }
 
+.m-recommend .triangle,
+.m-experience .triangle,
+.m-willing .triangle {
+    position: absolute;
+    bottom: -0.01rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0.1rem 0.1067rem 0.1rem;
+    border-color: transparent transparent #BE201F transparent;
+}
+
 .m-recommend h1,
 .m-experience h1 {
     display: flex;
@@ -73,6 +100,13 @@ section {
     border-bottom: solid 0.026rem;
     color: #BE201F;
     font-size: .4286rem;
+}
+
+.m-recommend h1 span,
+.m-experience h1 span,
+.m-willing h2 span {
+    position: relative;
+    border-bottom: solid #BE201F 0.0533rem;
 }
 
 .m-recommend h1 strong,
@@ -133,6 +167,7 @@ section {
     height: .16rem;
     background-image: url(assets/images/bar.png);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .m-recommend button,
@@ -182,7 +217,8 @@ section {
 
 .m-willing {
     padding: 0 0.4533rem 0.412rem;
-    text-align:center;
+    margin-bottom:0.3627rem;
+    text-align: center;
 }
 
 .m-willing h1 {
@@ -192,16 +228,22 @@ section {
 }
 
 .m-willing h2 {
-    padding-bottom: 0.1467rem;
     border-bottom: solid #BC5A59 .0267rem;
+    height: 0.3567rem;
     font-size: .2133rem;
     color: #BE201F;
-    text-align:left;
+    text-align: left;
+}
+
+.m-willing h2 span {
+    display: inline-block;
+    padding-bottom: .12rem;
+    height: 0.3567rem;
 }
 
 .m-willing .products {
     padding: .2rem 0 0 0;
-    text-align:left;
+    text-align: left;
 }
 
 .m-willing .product {
@@ -234,20 +276,89 @@ section {
     color: #A5A4A4;
 }
 
+.m-willing .product {
+    position: relative;
+}
+
+.m-willing .checkbox {
+    display: none;
+}
+
+.m-willing .checkbox+label {
+    position: absolute;
+    right: 0.28rem;
+    top: .6133rem;
+    background-color: #FCFCFC;
+    border-radius: 0.0711rem;
+    width: 0.4267rem;
+    height: 0.4267rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    line-height: 0.067rem;
+    box-shadow: 0.01rem 0rem 0.02rem rgba(0, 0, 0, 0.15);
+}
+
+.m-willing .checkbox:checked+label {
+    background-color: #FCFCFC;
+}
+
+.m-willing .checkbox:checked+label:after {
+    font-size: 0.4267rem;
+    content: "\2714";
+    color: #BE201F;
+}
+
 .m-willing .submit {
-    margin:0.4267rem 0 .412rem 0;
-    border-radius:.1907rem;
-    width:2.1613rem;
-    height:.4947rem;
-    background-color:#BE201F;
-    color:#fff;
-    font-size:.332rem;
-    border:none;
+    position: relative;
+    margin: 0.4267rem 0 .412rem 0;
+    border-radius: .1907rem;
+    width: 2.1613rem;
+    height: .4947rem;
+    background-color: #BE201F;
+    color: #fff;
+    font-size: .332rem;
+    border: none;
+}
+
+.m-willing .submit .triangle {
+    position: absolute;
+    top: 0.158rem;
+    left: 0.3667rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.09515rem 0 0.09515rem 0.1627rem;
+    border-color: transparent transparent transparent #fff;
 }
 
 .m-nav {
     position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    height: 1.5307rem;
+    width: 100%;
+    background-color:#fff;
 }
+
+.m-nav .navbar_item {
+    flex-grow:1;
+    text-align:center;
+}
+
+.m-nav .navbar_icon {
+    display:inline-block;
+    width: 0.68rem;
+    height: 0.68rem;
+}
+
+.m-nav .navbar_label {
+    margin-top:.12rem;
+    font-size: 0.3124rem;
+    color: #999;
+}
+
 .m-nav .cart {
-    background-color:#BE201F;
+    background-color: #BE201F;
 }

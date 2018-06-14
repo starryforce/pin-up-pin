@@ -30,12 +30,15 @@
                   <p>南京</p>
                   <p>[切换]</p>
             </a>
+            <span class="search_icon"></span>
             <input type="search" id="mySearch" name="q" placeholder="搜索地名或者商品关键字">
       </form>
       <!-- Recommend -->
       <section class="m-recommend">
             <h1>
-                  <span>精品推荐</span>
+                  <span>精品推荐
+                        <strong class="triangle"></strong>
+                  </span>
                   <strong>MORE</strong>
             </h1>
             <div class="detail">
@@ -57,7 +60,9 @@
       <!-- experience -->
       <section class="m-experience">
             <h1>
-                  <span>抢先体验</span>
+                  <span>抢先体验
+                        <strong class="triangle"></strong>
+                  </span>
                   <strong>MORE</strong>
             </h1>
             <div class="preview">
@@ -75,7 +80,11 @@
       <!-- wish -->
       <section class="m-willing">
             <h1>期待产品</h1>
-            <h2>产品选择</h2>
+            <h2>
+                  <span>产品选择
+                        <strong class="triangle"></strong>
+                  </span>
+            </h2>
             <section class="products">
                   <section class="product">
                         <div class="preview">
@@ -84,6 +93,8 @@
                         <div class="info">
                               <h3>【野味养殖】正宗深山老林娃娃鱼养殖系列</h3>
                               <p class="introduction">汉中娃娃鱼，半野生养殖，全天然环境，自然生长，4年才能长成，产品有限，非常珍贵。</p>
+                              <input id="checkBox1" type="checkbox" class="checkbox">
+                              <label for="checkBox1"></label>
                         </div>
                   </section>
                   <section class="product">
@@ -93,6 +104,8 @@
                         <div class="info">
                               <h3>【野味养殖】正宗深山老林娃娃鱼养殖系列</h3>
                               <p class="introduction">汉中娃娃鱼，半野生养殖，全天然环境，自然生长，4年才能长成，产品有限，非常珍贵。</p>
+                              <input id="checkBox2" type="checkbox" class="checkbox">
+                              <label for="checkBox2"></label>
                         </div>
                   </section>
                   <section class="product">
@@ -102,43 +115,35 @@
                         <div class="info">
                               <h3>【野味养殖】正宗深山老林娃娃鱼养殖系列</h3>
                               <p class="introduction">汉中娃娃鱼，半野生养殖，全天然环境，自然生长，4年才能长成，产品有限，非常珍贵。</p>
+                              <input id="checkBox3" type="checkbox" class="checkbox">
+                              <label for="checkBox3"></label>
                         </div>
                   </section>
             </section>
-            <button class="submit">提交</button>
+            <button class="submit">
+                  <strong class="triangle"></strong> 提交</button>
       </section>
       <!-- 导航 -->
-      <div class="m-nav weui-tabbar">
-            <a href="javascript:;" class="weui-tabbar__item weui-bar__item--on">
-                  <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
-                  <div class="weui-tabbar__icon">
-                        <img src="./assets/images/home.png" alt="">
-                  </div>
-                  <p class="weui-tabbar__label">首页</p>
+      <div class="m-nav">
+            <a href="javascript:;" class="navbar_item">
+                  <img class="navbar_icon" src="./assets/images/home.png" alt="">
+                  <p class="navbar_label">首页</p>
             </a>
-            <a href="javascript:;" class="weui-tabbar__item">
-                  <div class="weui-tabbar__icon">
-                        <img src="./assets/images/store.png" alt="">
-                  </div>
-                  <p class="weui-tabbar__label">门店</p>
+            <a href="javascript:;" class="navbar_item">
+                  <img class="navbar_icon" src="./assets/images/store.png" alt="">
+                  <p class="navbar_label">门店</p>
             </a>
-            <a href="javascript:;" class="weui-tabbar__item cart">
-                  <div class="weui-tabbar__icon">
-                        <img src="./assets/images/cart.png" alt="">
-                  </div>
-                  <p class="weui-tabbar__label">交易</p>
+            <a href="javascript:;" class="navbar_item cart">
+                  <img class="navbar_icon" src="./assets/images/cart.png" alt="">
+                  <p class="navbar_label">交易</p>
             </a>
-            <a href="javascript:;" class="weui-tabbar__item">
-                  <div class="weui-tabbar__icon">
-                        <img src="./assets/images/news.png" alt="">
-                  </div>
-                  <p class="weui-tabbar__label">资讯</p>
+            <a href="javascript:;" class="navbar_item">
+                  <img class="navbar_icon" src="./assets/images/news.png" alt="">
+                  <p class="navbar_label">资讯</p>
             </a>
-            <a href="javascript:;" class="weui-tabbar__item">
-                  <div class="weui-tabbar__icon">
-                        <img src="./assets/images/personal.png" alt="">
-                  </div>
-                  <p class="weui-tabbar__label">我的</p>
+            <a href="javascript:;" class="navbar_item">
+                  <img class="navbar_icon" src="./assets/images/personal.png" alt="">
+                  <p class="navbar_label">我的</p>
             </a>
       </div>
 
