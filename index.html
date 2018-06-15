@@ -12,6 +12,7 @@
 
       <!-- 样式标准化css -->
       <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css">
+      <link rel="stylesheet" href="assets/styles/pickout.css">
       <link rel="stylesheet" href="assets/styles/reboot.css">
       <!-- 界面引入css -->
       <link href="index.css" rel="stylesheet" />
@@ -25,11 +26,22 @@
       </section>
       <!-- 搜索框 -->
       <form class="m-search_bar">
-            <a class="position">
-                  <span class="icon"></span>
-                  <p>南京</p>
-                  <p>[切换]</p>
-            </a>
+            <div class="form-group">
+                  <label class="position" for="city">
+                        <span class="icon"></span>
+                        <p>南京</p>
+                        <p>[切换]</p>
+                  </label>
+                  <select name="city" id="city" class="city pickout" placeholder="选择一个城市">
+                        <option data-icon="&spades;" value="bj">北京</option>
+                        <option data-icon="&clubs;" value="sh">上海</option>
+                        <option data-icon="&hearts;" value="gz">广州</option>
+                        <option selected data-icon="&diams;" value="sz">深圳</option>
+                        <option data-icon="&#9786;" value="xg">香港</option>
+                        <option data-icon="&#9792;" value="sjz">石家庄</option>
+                        <option data-icon="&#9794;" value="cd">成都</option>
+                  </select>
+            </div>
             <span class="search_icon"></span>
             <input type="search" id="mySearch" name="q" placeholder="搜索地名或者商品关键字">
       </form>
@@ -151,6 +163,16 @@
 
       <!-- flexible移动端自适应引入 -->
       <script type="text/javascript" src="assets/scripts/flexible.js"></script>
+      <!-- 弹出层 -->
+      <script src="assets/scripts/pickout.js"></script>
+      <script>
+            pickout.to({
+                  el: '.city',
+                  theme: 'dark',
+                  search: true
+            });
+            pickout.updated('.city');
+      </script>
       <!-- 界面对应js -->
       <script type="text/javascript" src="index.js"></script>
 </body>

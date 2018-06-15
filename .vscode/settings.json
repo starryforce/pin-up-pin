@@ -1,6 +1,0 @@
-{
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {}
-  },
-  "html.format.wrapAttributes": "auto"
-}
