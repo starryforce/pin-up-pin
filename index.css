@@ -11,7 +11,9 @@ section {
 .m-swiper img {
   width: 100%;
 }
+
 /* 搜索框 */
+
 .m-search_bar {
   position: relative;
   display: flex;
@@ -23,7 +25,7 @@ section {
 
 .m-search_bar .position {
   position: relative;
-  display:inline-block;
+  display: inline-block;
   padding-left: 0.76rem;
   margin-right: 0.3rem;
   width: 1.65rem;
@@ -105,6 +107,7 @@ section {
   color: #be201f;
   font-size: 0.4286rem;
 }
+
 .m-recommend button,
 .m-experience button {
   position: absolute;
@@ -118,25 +121,27 @@ section {
   color: #fff;
   font-size: 0.3457rem;
 }
+
 .m-recommend h1 span,
 .m-experience h1 span,
 .m-willing h2 span {
   position: absolute;
-  top:0;
-  left:0;
-  height:0.75rem;
+  top: 0;
+  left: 0;
+  height: 0.75rem;
   border-bottom: solid #be201f 0.0533rem;
 }
 
 .m-recommend h1 a,
 .m-experience h1 a {
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   font-size: 0.3467rem;
 }
 
 /* 推荐 */
+
 .m-recommend .detail {
   position: relative;
   margin-top: 0.1867rem;
@@ -187,12 +192,34 @@ section {
 
 .m-recommend .bar {
   height: 0.16rem;
-  background-image: url(assets/images/bar.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.m-recommend .bar {
+  border-radius: 2px;
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  border-top: 1px #aaa solid;
+  background-color: #eee;
+}
+
+.m-recommend .bar::-webkit-progress-bar {
+  background-color: RGBA(179, 179, 179, 1);
+}
+
+.m-recommend .bar::-webkit-progress-value {
+  background: -webkit-linear-gradient(left, #5F5050, RGBA(189, 32, 31, 1));
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #5F5050, RGBA(189, 32, 31, 1));
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #5F5050, RGBA(189, 32, 31, 1));
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #5F5050, RGBA(189, 32, 31, 1));
+  /* 标准的语法 */
 }
 
 /* 体验 */
+
 .m-experience {
   position: relative;
 }
@@ -225,6 +252,7 @@ section {
 }
 
 /* 期待产品 */
+
 .m-willing {
   padding: 0 0.4533rem 0.412rem;
   margin-bottom: 0.3627rem;
@@ -295,7 +323,7 @@ section {
   display: none;
 }
 
-.m-willing .checkbox + label {
+.m-willing .checkbox+label {
   position: absolute;
   right: 0.28rem;
   top: 0.6133rem;
@@ -310,12 +338,12 @@ section {
   box-shadow: 0.01rem 0rem 0.02rem rgba(0, 0, 0, 0.15);
 }
 
-.m-willing .checkbox:checked + label {
+.m-willing .checkbox:checked+label {
   background-color: #fcfcfc;
   color: #be201f;
 }
 
-.m-willing .checkbox:checked + label::after {
+.m-willing .checkbox:checked+label::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -352,7 +380,9 @@ section {
   border-width: 0.09515rem 0 0.09515rem 0.1627rem;
   border-color: transparent transparent transparent #fff;
 }
+
 /* 导航栏 */
+
 .m-nav {
   position: fixed;
   bottom: 0;
@@ -424,12 +454,15 @@ section {
   height: 1.5147rem;
   z-index: 1;
 }
-.pk-input{
-  display:none;
+
+.pk-input {
+  display: none;
 }
-.pk-arrow{
-  display:none;
+
+.pk-arrow {
+  display: none;
 }
-.pk-modal{
-  box-sizing:content-box;
+
+.pk-modal {
+  box-sizing: content-box;
 }
