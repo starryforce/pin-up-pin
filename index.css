@@ -306,10 +306,19 @@ section {
   color: #be201f;
 }
 
-.m-willing .checkbox:checked + label:after {
-  font-size: 0.4267rem;
-  content: "\2714";
+.m-willing .checkbox:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(assets/images/checked.png);
+  width: 0.2933rem;
+  height: 0.24rem;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: #be201f;
+  overflow: visible;
 }
 
 .m-willing .submit {
