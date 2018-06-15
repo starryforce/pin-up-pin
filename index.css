@@ -52,7 +52,7 @@ section {
 .m-search_bar .search_icon {
   position: absolute;
   top: 0.5467rem;
-  left: 2.5067rem;
+  left: 2.9067rem;
   width: 0.3333rem;
   height: 0.3333rem;
   display: inline-block;
@@ -69,6 +69,7 @@ section {
   border: none;
   border-radius: 0.125rem;
   background: #eaebed;
+  -webkit-appearance: none;
   font-size: 0.34rem;
   color: #a5a4a4;
 }
@@ -302,6 +303,7 @@ section {
 
 .m-willing .checkbox:checked + label {
   background-color: #fcfcfc;
+  color: #be201f;
 }
 
 .m-willing .checkbox:checked + label:after {
